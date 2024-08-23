@@ -12,8 +12,6 @@ public:
     static bool validateBalance(double balance) {}
     static bool validateSalary(double salary) {}
     static bool validateAmount(double amount) {}
-
-
 };
 
 #endif // VALIDATION_H

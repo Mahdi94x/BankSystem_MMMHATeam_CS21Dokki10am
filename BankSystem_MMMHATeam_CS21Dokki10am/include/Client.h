@@ -23,9 +23,7 @@ public:
     double getBalance() {}
 
     // Methods:
-    void withdraw(double amount) {
-        if (Validation::validateAmount(amount)) {}
-    }
+    void withdraw(double amount) {}
 
     void deposite(double amount) {}
     }
