@@ -1,6 +1,7 @@
 #include <iostream>
-
 using namespace std;
+#include "Client.h"
+#include "Admin.h"
 
 int main()
 {
