@@ -5,7 +5,6 @@ using namespace std;
 #include <regex>
 #include <string>
 
-
 class Validation
 {
 public:

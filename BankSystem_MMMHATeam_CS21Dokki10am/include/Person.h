@@ -30,7 +30,7 @@ public:
 
     string getPassword() {}
 
-    //Methods:
+    // Methods:
 	// Abstracted Pure Virtual Method
 	virtual void display() = 0;
 

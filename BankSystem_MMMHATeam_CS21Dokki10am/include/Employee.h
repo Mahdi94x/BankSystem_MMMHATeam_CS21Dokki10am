@@ -1,14 +1,29 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
+#include <iostream>
+using namespace std;
+#include "Person.h"
 
-
-class Employee
+class Employee : public Person
 {
-    public:
+private:
 
-    protected:
+	//Attributes:
+	double salary;
 
-    private:
+public:
+    //Constructors:
+	Employee() {}
+	Employee(int id, string name, string password, double salary) {}
+
+	//Setters:
+    void setSalary(double salary) {}
+
+    //Getters:
+    double getSalary() {}
+
+    //Methods:
+    virtual void display() {}
 };
 
 #endif // EMPLOYEE_H
