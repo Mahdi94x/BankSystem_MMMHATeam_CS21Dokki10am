@@ -7,7 +7,12 @@ using namespace std;
 class Validation
 {
 public:
-    static bool validateName(string name) {}
+    static bool validateName(string name) { // Mahdi
+	if (name.size() >= 5 && name.size() <= 20 && regex_match(name, regex("^[a-zA-Z ]+$")))
+		return true;
+	else
+		return false;
+}
     static bool validatePassword(string password) {}
     static bool validateBalance(double balance) {}
     static bool validateSalary(double salary) {}
