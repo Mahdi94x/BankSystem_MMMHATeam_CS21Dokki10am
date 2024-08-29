@@ -112,8 +112,16 @@ public:
         }
 }
 
-    void deposite(double amount) {}
-    }
+    void deposite(double amount) { // Mostafa
+        amount = updatingAmount(amount);
+        if (Validation::validateAmount(amount)) {
+            this->balance += amount;
+            acceptedTransaction();
+        }
+        else {
+            declinedAmount();
+        }
+}
 
     void transferTo(Client& recipient, double amount) {}
     }
