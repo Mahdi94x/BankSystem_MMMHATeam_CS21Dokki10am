@@ -91,12 +91,21 @@ public:
             this->phonenumber = "00000000000";
         }
 }
-    //Getters:
-    int getID() {}
+    //Getters: // Helal
+    string getID() {
+        return this->id;
+    }
 
-    string getName() {}
+    string getName() {
+        return this->name;
+    }
 
-    string getPassword() {}
+    string getPassword() {
+        return this->password;
+    }
+    string getPhoneNumber() {
+        return this->phonenumber;
+    }
 
     // Methods:
 	// Abstracted Pure Virtual Method
