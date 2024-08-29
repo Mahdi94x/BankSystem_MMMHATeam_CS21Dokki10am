@@ -30,7 +30,25 @@ public:
         this->id = id;
 }
 
+    void setName(string name) { // Hadeer
+        int attemps{};
+        const int maxAttemps{ 3 };
+        while (!(Validation::validateName(name)) && attemps < maxAttemps) {
+            cout << "Apologies! Invalid Name. The Name must be alphabetic chars and min size 5 and max size 20\n";
+            attemps++;
+            cout << "Attemp => (" << attemps << "/" << maxAttemps << ")" << " Enter the modified name : ";
+            getline(cin, name);
+        }
 
+        if (Validation::validateName(name)) {
+            this->name = name;
+        }
+        else {
+            cout << "Max Attemps have been reached! => Setting name to default value\n";
+            cout << "Kindly Contact our support ASAP.\n";
+            this->name = "default.";
+        }
+}
 
     //Getters:
     int getID() {}
