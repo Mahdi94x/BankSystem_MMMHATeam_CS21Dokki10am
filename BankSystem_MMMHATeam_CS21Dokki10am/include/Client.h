@@ -11,6 +11,41 @@ private:
 	//Attributes:
 	double balance;
 
+	//Private Methods: // Team Effort
+    void acceptedTransaction() {
+        cout << "Processing...\nTransaction is completed.\n";
+        checkBalance();
+        cout <<"Time of Transaction => " << getCurrentTime() << endl;
+        cout << "==================================================================\n";
+}
+
+    void declinedTransaction() {
+        cout << "Processing...\nTransaction is declined. Please contact the bank for more information.\n";
+        checkBalance();
+        cout << "Time of Transaction => " << getCurrentTime() << endl;
+        cout << "==================================================================\n";
+}
+
+    double updatingAmount(double amount){
+        int attempt{};
+        const int maxattempts{ 3 };
+        while (!(Validation::validateAmount(amount)) && attempt < maxattempts) {
+            cout << "Apologies! Invalid Amount. The Amount must be equal to or higher than 100.\n";
+            attempt++;
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified amount : ";
+            cin >> amount;
+            // Clear the input buffer to avoid issues with getline or other input methods.
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+	return amount;
+}
+
+    void declinedAmount() {
+        cout << "Apologies! The amount you entered does not meet the requirements!\n";
+        declinedTransaction();
+}
+
 public:
     //Attributes: //Hadeer
     static int countClients;
@@ -36,7 +71,7 @@ public:
         while (!(Validation::validateBalance(balance)) && attempt < maxattempts) {
             cout << "Apologies! Invalid Balance. The Balance must be equal to or higher than 1500.\n";
             attempt++;
-            cout << "Attemp => (" << attempt << "/" << maxattempts << ")" << " Enter the modified balance : ";
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified balance : ";
             cin >> balance;
             // Clear the input buffer to avoid issues with getline or other input methods.
             cin.clear();
@@ -46,7 +81,7 @@ public:
             this->balance = balance;
         }
         else {
-            cout << "Max Attemps have been reached! => Setting balance to default value\n";
+            cout << "Max Attempts have been reached! => Setting balance to default value\n";
             cout << "Kindly Contact our support ASAP\n";
             this->balance = 0;
         }

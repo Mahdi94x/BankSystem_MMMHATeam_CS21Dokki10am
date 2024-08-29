@@ -80,7 +80,7 @@ public:
         while (!(Validation::validatePhoneNumber(phonenumber)) && attempt < maxattempts) {
             cout << "Apologies! Invalid Phone number. Phone number must consist of 11 numbers.\n";
             attempt++;
-            cout << "Attemp => (" << attempt << "/" << maxattempts << ")" << " Enter the modified phone number : ";
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified phone number : ";
             cin >> phonenumber;
             // Clear the input buffer to avoid issues with getline or other input methods.
             cin.clear();
@@ -90,7 +90,7 @@ public:
             this->phonenumber = phonenumber;
         }
         else {
-            cout << "Max Attemps have been reached! => Setting phone number to default value\n";
+            cout << "Max Attempts have been reached! => Setting phone number to default value\n";
             cout << "Kindly Contact our support ASAP\n";
             this->phonenumber = "00000000000";
         }
