@@ -31,12 +31,12 @@ public:
 }
 
     void setName(string name) { // Hadeer
-        int attemps{};
-        const int maxAttemps{ 3 };
-        while (!(Validation::validateName(name)) && attemps < maxAttemps) {
+        int attempt{};
+        const int maxattempts{ 3 };
+        while (!(Validation::validateName(name)) && attempt < maxattempts) {
             cout << "Apologies! Invalid Name. The Name must be alphabetic chars and min size 5 and max size 20\n";
-            attemps++;
-            cout << "Attemp => (" << attemps << "/" << maxAttemps << ")" << " Enter the modified name : ";
+            attempt++;
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified name : ";
             getline(cin, name);
         }
 
@@ -44,9 +44,30 @@ public:
             this->name = name;
         }
         else {
-            cout << "Max Attemps have been reached! => Setting name to default value\n";
+            cout << "Max Attempts have been reached! => Setting name to default value\n";
             cout << "Kindly Contact our support ASAP.\n";
             this->name = "default.";
+        }
+}
+    void setPassword(string password) { // Amira
+        int attempt{};
+        const int maxattempts{ 3 };
+        while (!(Validation::validatePassword(password)) && attempt < maxattempts) {
+            cout << "Apologies! Invalid Password. Password must be with min size 8 and max size 20\n";
+            attempt++;
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified password : ";
+            cin>>password;
+            // Clear the input buffer to avoid issues with getline or other input methods.
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+        if (Validation::validatePassword(password)) {
+            this->password = password;
+        }
+        else {
+            cout << "Max Attempts have been reached! => Setting password to default value\n";
+            cout << "Kindly Contact our support ASAP.\n";
+            this->password = "************";
         }
 }
 
