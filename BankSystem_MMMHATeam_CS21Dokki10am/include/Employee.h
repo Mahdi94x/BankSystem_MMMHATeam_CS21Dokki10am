@@ -53,7 +53,9 @@ public:
 }
 
     //Getters:
-    double getSalary() {}
+    double getSalary() { // Hadeer
+        return this->salary;
+}
 
     //Methods:
     virtual void display() {}
