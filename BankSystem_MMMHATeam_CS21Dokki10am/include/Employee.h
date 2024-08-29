@@ -58,7 +58,14 @@ public:
 }
 
     //Methods:
-    virtual void display() {}
+    virtual void display() { // Helal
+        cout << "Name:         " << getName() << endl;
+        cout << "ID:           " << getID() << endl;
+        cout << "Password:     " << getPassword() << endl;
+        cout << "Phone Number: " << getPhoneNumber() << endl;
+        cout << "Salary:       " << getSalary() << endl;
+        cout << "======================================\n";
+}
 };
 
 #endif // EMPLOYEE_H
