@@ -12,15 +12,22 @@ private:
 	double balance;
 
 public:
-    //Constructors:
-    Client() {}
-    Client(int id, string name, string password, double balance) {}
+    //Attributes: //Hadeer
+    static int countClients;
 
-    //Setters:
-    void setBalance(double balance) {}
-
-    //Getters:
-    double getBalance() {}
+    //Constructors: // Hadeer
+    Client() {
+        this->balance = 0;
+        countClients++;
+}
+    Client(string id, string name, string password): Person (id,name,password) {
+        this->balance = 0;
+        countClients++;
+}
+    Client(string id, string name, string password, string phonenumber, double balance):Person (id,name,password, phonenumber) {
+        setBalance(balance); // this->balance = balance;
+        countClients++;
+}
 
     // Methods:
     void withdraw(double amount) {}
