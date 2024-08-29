@@ -3,6 +3,10 @@
 #include <iostream>
 using namespace std;
 #include "Validation.h"
+#include <ctime>
+#include <sstream>
+#include <iomanip>
+#include <limits>
 
 class Person
 {
@@ -107,9 +111,20 @@ public:
         return this->phonenumber;
     }
 
-    // Methods:
-	// Abstracted Pure Virtual Method
-	virtual void display() = 0;
+    // Methods: // Mahdi
+
+    // Time Method:
+    string getCurrentTime() {
+        time_t now = time(0); // Get current time
+        tm ltm; // Local time structure
+        localtime_s(&ltm, &now); // Safe version of localtime
+        ostringstream oss;
+        oss << put_time(&ltm, "%Y-%m-%d %H:%M:%S"); // Format time as YYYY-MM-DD HH:MM:SS
+        return oss.str();
+    }
+
+    /* Abstracted Pure Virtual Method*/
+    virtual void display() = 0;
 
 };
 
