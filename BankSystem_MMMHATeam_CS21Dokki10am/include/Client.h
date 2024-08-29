@@ -123,10 +123,22 @@ public:
         }
 }
 
-    void transferTo(Client& recipient, double amount) {}
-    }
-
-    void checkBalance() {}
+    void transferTo(Client& recipient, double amount){ // Mahdi
+        amount = updatingAmount(amount);
+        if (Validation::validateAmount(amount)) {
+            if (amount > balance) {
+                declinedTransaction();
+            }
+            else {
+                this->balance -= amount;
+                recipient.balance += amount;
+                acceptedTransaction();
+            }
+        }
+        else {
+            declinedAmount();
+        }
+}
 
     void display() {}
 
