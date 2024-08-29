@@ -96,7 +96,21 @@ public:
     void checkBalance() { // Amira
         cout << "Current Balance of Account's ID: " << getID() << " is => " << getBalance() << " EGP." << endl;
 }
-    void withdraw(double amount) {}
+    void withdraw(double amount) { // Mahdi
+        amount = updatingAmount(amount);
+        if (Validation::validateAmount(amount)) {
+            if (amount > balance) {
+                declinedTransaction();
+            }
+            else {
+                this->balance -= amount;
+                acceptedTransaction();
+            }
+        }
+        else {
+            declinedAmount();
+        }
+}
 
     void deposite(double amount) {}
     }
