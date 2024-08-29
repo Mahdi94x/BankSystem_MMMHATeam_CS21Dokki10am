@@ -13,7 +13,12 @@ public:
 	else
 		return false;
 }
-    static bool validatePassword(string password) {}
+    static bool validatePassword(string password) { // Helal
+	if (password.size() >= 8 && password.size() <= 20)
+		return true;
+	else
+		return false;
+}
     static bool validateBalance(double balance) {}
     static bool validateSalary(double salary) {}
     static bool validateAmount(double amount) {}
