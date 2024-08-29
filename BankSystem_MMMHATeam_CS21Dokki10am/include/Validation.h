@@ -25,7 +25,12 @@ public:
 	else
 		return false;
 }
-    static bool validateSalary(double salary) {}
+    static bool validateSalary(double salary) { // Hadeer
+	if (salary >= 5000)
+		return true;
+	else
+		return false;
+}
     static bool validateAmount(double amount) {}
 };
 
