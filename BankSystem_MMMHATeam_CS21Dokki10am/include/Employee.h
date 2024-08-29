@@ -30,7 +30,27 @@ public:
 }
 
 	//Setters:
-    void setSalary(double salary) {}
+    void setSalary(double salary) { // Mostafa
+        int attempt{};
+        const int maxattempts{ 3 };
+        while (!(Validation::validateSalary(salary)) && attempt < maxattempts) {
+            cout << "Apologies! Invalid salary. The salary must be equal to or higher than 5000.\n";
+            attempt++;
+            cout << "Attemp => (" << attempt << "/" << maxattempts << ")" << " Enter the modified salary : ";
+            cin >> salary;
+            // Clear the input buffer to avoid issues with getline or other input methods.
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+        if (Validation::validateSalary(salary)) {
+            this->salary = salary;
+        }
+        else {
+            cout << "Max Attempts have been reached! => Setting salary to default value\n";
+            cout << "Kindly Contact our support ASAP\n";
+            this->salary = 0;
+        }
+}
 
     //Getters:
     double getSalary() {}
