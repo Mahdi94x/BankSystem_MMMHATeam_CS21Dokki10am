@@ -4,15 +4,28 @@
 using namespace std;
 #include "Employee.h"
 
-class Admin
+class Admin : public Employee // Mahdi
 {
 public:
+	//Attributes:
+	static int countAdmins;
+
 	//Constructors:
-	Admin(){}
-	Admin(int id, string name, string password,double salary){}
+	Admin(){
+		countAdmins++;
+	}
+	Admin(string id, string name, string password) : Employee(id, name, password) {
+		countAdmins++;
+	}
+	Admin(string id, string name, string password, string phonenumber, double salary):Employee(id, name, password, phonenumber, salary) {
+		countAdmins++;
+	}
 
 	//Methods:
-	void display() {}
+	void display() {
+		cout << "Admin's Authority\n" << endl;
+		Employee::display();
+	}
 };
 
 #endif // ADMIN_H
