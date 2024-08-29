@@ -78,6 +78,7 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validateBalance(balance)) {
+            cout << "Thank you for providing the modified balance.\n";
             this->balance = balance;
         }
         else {
@@ -103,6 +104,7 @@ public:
                 declinedTransaction();
             }
             else {
+                cout << "Thank you for providing the modified amount.\n";
                 this->balance -= amount;
                 acceptedTransaction();
             }
@@ -115,6 +117,7 @@ public:
     void deposite(double amount) { // Mostafa
         amount = updatingAmount(amount);
         if (Validation::validateAmount(amount)) {
+            cout << "Thank you for providing the modified amount.\n";
             this->balance += amount;
             acceptedTransaction();
         }
@@ -130,6 +133,7 @@ public:
                 declinedTransaction();
             }
             else {
+                cout << "Thank you for providing the modified amount.\n";
                 this->balance -= amount;
                 recipient.balance += amount;
                 acceptedTransaction();

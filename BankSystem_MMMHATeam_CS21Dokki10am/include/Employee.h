@@ -36,13 +36,14 @@ public:
         while (!(Validation::validateSalary(salary)) && attempt < maxattempts) {
             cout << "Apologies! Invalid salary. The salary must be equal to or higher than 5000.\n";
             attempt++;
-            cout << "Attemp => (" << attempt << "/" << maxattempts << ")" << " Enter the modified salary : ";
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified salary : ";
             cin >> salary;
             // Clear the input buffer to avoid issues with getline or other input methods.
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validateSalary(salary)) {
+            cout << "Thank you for providing the modified salary.\n";
             this->salary = salary;
         }
         else {

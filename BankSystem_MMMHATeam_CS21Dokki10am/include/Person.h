@@ -14,6 +14,17 @@ protected:
     // Attributes:
     string name, password, id, phonenumber;
 
+    // Protected Method
+    // Time Method:
+    string getCurrentTime() {
+        time_t now = time(0); // Get current time
+        tm ltm; // Local time structure
+        localtime_s(&ltm, &now); // Safe version of localtime
+        ostringstream oss;
+        oss << put_time(&ltm, "%Y-%m-%d %H:%M:%S"); // Format time as YYYY-MM-DD HH:MM:SS
+        return oss.str();
+    }
+
 public:
     //Constructors: // Mostafa
     Person() {
@@ -45,6 +56,7 @@ public:
         }
 
         if (Validation::validateName(name)) {
+            cout << "Thank you for providing the modified name.\n";
             this->name = name;
         }
         else {
@@ -66,6 +78,7 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validatePassword(password)) {
+            cout << "Thank you for providing the modified password.\n";
             this->password = password;
         }
         else {
@@ -87,6 +100,7 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validatePhoneNumber(phonenumber)) {
+            cout << "Thank you for providing the modified phone number.\n";
             this->phonenumber = phonenumber;
         }
         else {
@@ -112,17 +126,6 @@ public:
     }
 
     // Methods: // Mahdi
-
-    // Time Method:
-    string getCurrentTime() {
-        time_t now = time(0); // Get current time
-        tm ltm; // Local time structure
-        localtime_s(&ltm, &now); // Safe version of localtime
-        ostringstream oss;
-        oss << put_time(&ltm, "%Y-%m-%d %H:%M:%S"); // Format time as YYYY-MM-DD HH:MM:SS
-        return oss.str();
-    }
-
     /* Abstracted Pure Virtual Method*/
     virtual void display() = 0;
 

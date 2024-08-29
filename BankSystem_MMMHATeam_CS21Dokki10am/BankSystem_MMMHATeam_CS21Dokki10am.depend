@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1724963194 source:c:\users\arrow\desktop\route cs codes\assignments\project 2 - banksystem\teamtrails\banksystem_mmmhateam_cs21dokki10am\main.cpp
+	<iostream>
+	"Client.h"
+	"Admin.h"
+
+1724961331 c:\users\arrow\desktop\route cs codes\assignments\project 2 - banksystem\teamtrails\banksystem_mmmhateam_cs21dokki10am\include\client.h
+	<iostream>
+	"Person.h"
+
+1724960897 c:\users\arrow\desktop\route cs codes\assignments\project 2 - banksystem\teamtrails\banksystem_mmmhateam_cs21dokki10am\include\person.h
+	<iostream>
+	"Validation.h"
+	<ctime>
+	<sstream>
+	<iomanip>
+	<limits>
+
+1724960192 c:\users\arrow\desktop\route cs codes\assignments\project 2 - banksystem\teamtrails\banksystem_mmmhateam_cs21dokki10am\include\validation.h
+	<iostream>
+	<regex>
+	<string>
+
+1724963220 c:\users\arrow\desktop\route cs codes\assignments\project 2 - banksystem\teamtrails\banksystem_mmmhateam_cs21dokki10am\include\admin.h
+	<iostream>
+	"Employee.h"
+
+1724961792 c:\users\arrow\desktop\route cs codes\assignments\project 2 - banksystem\teamtrails\banksystem_mmmhateam_cs21dokki10am\include\employee.h
+	<iostream>
+	"Person.h"
+

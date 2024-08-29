@@ -23,7 +23,7 @@ public:
 
 	//Methods:
 	void display() {
-		cout << "Admin's Authority\n" << endl;
+		cout << "Admin's Authority" << endl;
 		Employee::display();
 	}
 };

@@ -1,0 +1,454 @@
+#ifndef VALIDATION_H
+#define VALIDATION_H
+#include <iostream>
+using namespace std;
+#include <regex> // Regular expression
+#include <string>
+
+class Validation
+{
+public:
+    static bool validateName(string name) { // Mahdi
+	if (name.size() >= 5 && name.size() <= 20 && regex_match(name, regex("^[a-zA-Z ]+$")))
+		return true;
+	else
+		return false;
+}
+    static bool validatePassword(string password) { // Helal
+	if (password.size() >= 8 && password.size() <= 20)
+		return true;
+	else
+		return false;
+}
+    static bool validateBalance(double balance) { // Mostafa
+	if (balance >= 1500)
+		return true;
+	else
+		return false;
+}
+    static bool validateSalary(double salary) { // Hadeer
+	if (salary >= 5000)
+		return true;
+	else
+		return false;
+}
+    static bool validateAmount(double amount) { // Amira
+	if (amount >= 100)
+		return true;
+	else
+		return false;
+}
+    static bool validatePhoneNumber(string phonenumber) { // Mahdi
+	if (phonenumber.size() == 11 && regex_match(phonenumber, regex("^[0-9]+$")))
+		return true;
+	else
+		return false;
+}
+};
+
+#endif // VALIDATION_H
+
+#ifndef PERSON_H
+#define PERSON_H
+#include <iostream>
+using namespace std;
+#include "Validation.h"
+#include <ctime>
+#include <sstream>
+#include <iomanip>
+#include <limits>
+
+class Person
+{
+protected:
+    // Attributes:
+    string name, password, id, phonenumber;
+
+public:
+    //Constructors: // Mostafa
+    Person() {
+}
+    Person(string id, string name, string password) { // business constructor
+	setID(id);
+	setName(name);
+	setPassword(password);
+}
+    Person(string id, string name, string password, string phonenumber) {
+	setID(id);
+	setName(name);
+	setPassword(password);
+	setPhoneNumber(phonenumber);
+}
+    // Setters:
+    void setID(string id) { // Mostafa
+        this->id = id;
+}
+
+    void setName(string name) { // Hadeer
+        int attempt{};
+        const int maxattempts{ 3 };
+        while (!(Validation::validateName(name)) && attempt < maxattempts) {
+            cout << "Apologies! Invalid Name. The Name must be alphabetic chars and min size 5 and max size 20\n";
+            attempt++;
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified name : ";
+            getline(cin, name);
+        }
+
+        if (Validation::validateName(name)) {
+            this->name = name;
+        }
+        else {
+            cout << "Max Attempts have been reached! => Setting name to default value\n";
+            cout << "Kindly Contact our support ASAP.\n";
+            this->name = "default.";
+        }
+}
+    void setPassword(string password) { // Amira
+        int attempt{};
+        const int maxattempts{ 3 };
+        while (!(Validation::validatePassword(password)) && attempt < maxattempts) {
+            cout << "Apologies! Invalid Password. Password must be with min size 8 and max size 20\n";
+            attempt++;
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified password : ";
+            cin>>password;
+            // Clear the input buffer to avoid issues with getline or other input methods.
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+        if (Validation::validatePassword(password)) {
+            this->password = password;
+        }
+        else {
+            cout << "Max Attempts have been reached! => Setting password to default value\n";
+            cout << "Kindly Contact our support ASAP.\n";
+            this->password = "************";
+        }
+}
+    void setPhoneNumber(string phonenumber) { // Mahdi
+        int attempt{};
+        const int maxattempts{ 3 };
+        while (!(Validation::validatePhoneNumber(phonenumber)) && attempt < maxattempts) {
+            cout << "Apologies! Invalid Phone number. Phone number must consist of 11 numbers.\n";
+            attempt++;
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified phone number : ";
+            cin >> phonenumber;
+            // Clear the input buffer to avoid issues with getline or other input methods.
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+        if (Validation::validatePhoneNumber(phonenumber)) {
+            this->phonenumber = phonenumber;
+        }
+        else {
+            cout << "Max Attempts have been reached! => Setting phone number to default value\n";
+            cout << "Kindly Contact our support ASAP\n";
+            this->phonenumber = "00000000000";
+        }
+}
+    //Getters: // Helal
+    string getID() {
+        return this->id;
+    }
+
+    string getName() {
+        return this->name;
+    }
+
+    string getPassword() {
+        return this->password;
+    }
+    string getPhoneNumber() {
+        return this->phonenumber;
+    }
+
+    // Methods: // Mahdi
+
+    // Time Method:
+    string getCurrentTime() {
+        time_t now = time(0); // Get current time
+        tm ltm; // Local time structure
+        localtime_s(&ltm, &now); // Safe version of localtime
+        ostringstream oss;
+        oss << put_time(&ltm, "%Y-%m-%d %H:%M:%S"); // Format time as YYYY-MM-DD HH:MM:SS
+        return oss.str();
+    }
+
+    /* Abstracted Pure Virtual Method*/
+    virtual void display() = 0;
+
+};
+
+#endif // PERSON_H
+
+#ifndef CLIENT_H
+#define CLIENT_H
+#include <iostream>
+using namespace std;
+#include "Person.h"
+
+class Client : public Person
+{
+private:
+
+	//Attributes:
+	double balance;
+
+	//Private Methods: // Team Effort
+    void acceptedTransaction() {
+        cout << "Processing...\nTransaction is completed.\n";
+        checkBalance();
+        cout <<"Time of Transaction => " << getCurrentTime() << endl;
+        cout << "==================================================================\n";
+}
+
+    void declinedTransaction() {
+        cout << "Processing...\nTransaction is declined. Please contact the bank for more information.\n";
+        checkBalance();
+        cout << "Time of Transaction => " << getCurrentTime() << endl;
+        cout << "==================================================================\n";
+}
+
+    double updatingAmount(double amount){
+        int attempt{};
+        const int maxattempts{ 3 };
+        while (!(Validation::validateAmount(amount)) && attempt < maxattempts) {
+            cout << "Apologies! Invalid Amount. The Amount must be equal to or higher than 100.\n";
+            attempt++;
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified amount : ";
+            cin >> amount;
+            // Clear the input buffer to avoid issues with getline or other input methods.
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+	return amount;
+}
+
+    void declinedAmount() {
+        cout << "Apologies! The amount you entered does not meet the requirements!\n";
+        declinedTransaction();
+}
+
+public:
+    //Attributes: //Hadeer
+    static int countClients;
+
+    //Constructors: // Hadeer
+    Client() {
+        this->balance = 0;
+        countClients++;
+}
+    Client(string id, string name, string password): Person (id,name,password) {
+        this->balance = 0;
+        countClients++;
+}
+    Client(string id, string name, string password, string phonenumber, double balance):Person (id,name,password, phonenumber) {
+        setBalance(balance); // this->balance = balance;
+        countClients++;
+}
+
+    //Setters: // Helal
+    void setBalance(double balance) {
+        int attempt{};
+        const int maxattempts{ 3 };
+        while (!(Validation::validateBalance(balance)) && attempt < maxattempts) {
+            cout << "Apologies! Invalid Balance. The Balance must be equal to or higher than 1500.\n";
+            attempt++;
+            cout << "Attempt => (" << attempt << "/" << maxattempts << ")" << " Enter the modified balance : ";
+            cin >> balance;
+            // Clear the input buffer to avoid issues with getline or other input methods.
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+        if (Validation::validateBalance(balance)) {
+            this->balance = balance;
+        }
+        else {
+            cout << "Max Attempts have been reached! => Setting balance to default value\n";
+            cout << "Kindly Contact our support ASAP\n";
+            this->balance = 0;
+        }
+}
+
+    //Getters: // Amira
+    double getBalance() {
+        return this->balance;
+}
+
+    // Methods:
+    void checkBalance() { // Amira
+        cout << "Current Balance of Account's ID: " << getID() << " is => " << getBalance() << " EGP." << endl;
+}
+    void withdraw(double amount) { // Mahdi
+        amount = updatingAmount(amount);
+        if (Validation::validateAmount(amount)) {
+            if (amount > balance) {
+                declinedTransaction();
+            }
+            else {
+                this->balance -= amount;
+                acceptedTransaction();
+            }
+        }
+        else {
+            declinedAmount();
+        }
+}
+
+    void deposite(double amount) { // Mostafa
+        amount = updatingAmount(amount);
+        if (Validation::validateAmount(amount)) {
+            this->balance += amount;
+            acceptedTransaction();
+        }
+        else {
+            declinedAmount();
+        }
+}
+
+    void transferTo(Client& recipient, double amount){ // Mahdi
+        amount = updatingAmount(amount);
+        if (Validation::validateAmount(amount)) {
+            if (amount > balance) {
+                declinedTransaction();
+            }
+            else {
+                this->balance -= amount;
+                recipient.balance += amount;
+                acceptedTransaction();
+            }
+        }
+        else {
+            declinedAmount();
+        }
+}
+
+    void display() { // Mostafa
+        cout << "Name:         " << getName() << endl;
+        cout << "ID:           " << getID() << endl;
+        cout << "Password:     " << getPassword() << endl;
+        cout << "Phone Number: " << getPhoneNumber() << endl;
+        cout << "Balance:      " << getBalance() << endl;
+        cout << "======================================\n";
+}
+
+};
+
+#endif // CLIENT_H
+
+#ifndef EMPLOYEE_H
+#define EMPLOYEE_H
+#include <iostream>
+using namespace std;
+#include "Person.h"
+
+class Employee : public Person
+{
+private:
+
+	//Attributes:
+	double salary;
+
+public:
+    //Attributes: //Amira
+    static int countEmployees;
+
+    //Constructors: // Amira
+    Employee() {
+        this->salary = 0;
+        countEmployees++;
+}
+    Employee(string id, string name, string password) : Person(id, name, password) {
+        this->salary = 0;
+        countEmployees++;
+}
+    Employee(string id, string name, string password, string phonenumber, double salary) : Person(id, name, password, phonenumber) {
+        setSalary(salary);
+        countEmployees++;
+}
+
+	//Setters:
+    void setSalary(double salary) { // Mostafa
+        int attempt{};
+        const int maxattempts{ 3 };
+        while (!(Validation::validateSalary(salary)) && attempt < maxattempts) {
+            cout << "Apologies! Invalid salary. The salary must be equal to or higher than 5000.\n";
+            attempt++;
+            cout << "Attemp => (" << attempt << "/" << maxattempts << ")" << " Enter the modified salary : ";
+            cin >> salary;
+            // Clear the input buffer to avoid issues with getline or other input methods.
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+        if (Validation::validateSalary(salary)) {
+            this->salary = salary;
+        }
+        else {
+            cout << "Max Attempts have been reached! => Setting salary to default value\n";
+            cout << "Kindly Contact our support ASAP\n";
+            this->salary = 0;
+        }
+}
+
+    //Getters:
+    double getSalary() { // Hadeer
+        return this->salary;
+}
+
+    //Methods:
+    virtual void display() { // Helal
+        cout << "Name:         " << getName() << endl;
+        cout << "ID:           " << getID() << endl;
+        cout << "Password:     " << getPassword() << endl;
+        cout << "Phone Number: " << getPhoneNumber() << endl;
+        cout << "Salary:       " << getSalary() << endl;
+        cout << "======================================\n";
+}
+};
+
+#endif // EMPLOYEE_H
+
+#ifndef ADMIN_H
+#define ADMIN_H
+#include <iostream>
+using namespace std;
+#include "Employee.h"
+
+class Admin : public Employee // Mahdi
+{
+public:
+	//Attributes:
+	static int countAdmins;
+
+	//Constructors:
+	Admin(){
+		countAdmins++;
+	}
+	Admin(string id, string name, string password) : Employee(id, name, password) {
+		countAdmins++;
+	}
+	Admin(string id, string name, string password, string phonenumber, double salary):Employee(id, name, password, phonenumber, salary) {
+		countAdmins++;
+	}
+
+	//Methods:
+	void display() {
+		cout << "Admin's Authority\n" << endl;
+		Employee::display();
+	}
+};
+
+#endif // ADMIN_H
+
+#include <iostream>
+using namespace std;
+#include "Client.h"
+#include "Admin.h"
+int Client:: countClients = 0;
+int Employee::countEmployees = 0;
+int Admin::countAdmins = 0;
+
+int main()
+{
+	
+	return 0;
+}
