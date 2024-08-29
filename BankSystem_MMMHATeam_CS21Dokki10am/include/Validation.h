@@ -31,7 +31,12 @@ public:
 	else
 		return false;
 }
-    static bool validateAmount(double amount) {}
+    static bool validateAmount(double amount) { // Amira
+	if (amount >= 100)
+		return true;
+	else
+		return false;
+}
 };
 
 #endif // VALIDATION_H
