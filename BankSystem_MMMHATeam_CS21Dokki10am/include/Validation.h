@@ -37,6 +37,12 @@ public:
 	else
 		return false;
 }
+    static bool validatePhoneNumber(string phonenumber) { // Mahdi
+	if (phonenumber.size() == 11 && regex_match(phonenumber, regex("^[0-9]+$")))
+		return true;
+	else
+		return false;
+}
 };
 
 #endif // VALIDATION_H
