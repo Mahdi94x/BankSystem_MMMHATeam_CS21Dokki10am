@@ -12,9 +12,22 @@ private:
 	double salary;
 
 public:
-    //Constructors:
-	Employee() {}
-	Employee(int id, string name, string password, double salary) {}
+    //Attributes: //Amira
+    static int countEmployees;
+
+    //Constructors: // Amira
+    Employee() {
+        this->salary = 0;
+        countEmployees++;
+}
+    Employee(string id, string name, string password) : Person(id, name, password) {
+        this->salary = 0;
+        countEmployees++;
+}
+    Employee(string id, string name, string password, string phonenumber, double salary) : Person(id, name, password, phonenumber) {
+        setSalary(salary);
+        countEmployees++;
+}
 
 	//Setters:
     void setSalary(double salary) {}
