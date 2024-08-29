@@ -19,7 +19,12 @@ public:
 	else
 		return false;
 }
-    static bool validateBalance(double balance) {}
+    static bool validateBalance(double balance) { // Mostafa
+	if (balance >= 1500)
+		return true;
+	else
+		return false;
+}
     static bool validateSalary(double salary) {}
     static bool validateAmount(double amount) {}
 };
