@@ -52,7 +52,15 @@ public:
         }
 }
 
+    //Getters: // Amira
+    double getBalance() {
+        return this->balance;
+}
+
     // Methods:
+    void checkBalance() { // Amira
+        cout << "Current Balance of Account's ID: " << getID() << " is => " << getBalance() << " EGP." << endl;
+}
     void withdraw(double amount) {}
 
     void deposite(double amount) {}
