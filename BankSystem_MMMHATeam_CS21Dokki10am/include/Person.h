@@ -8,20 +8,29 @@ class Person
 {
 protected:
     // Attributes:
-    int id;
-    string name, password;
+    string name, password, id, phonenumber;
 
 public:
-    //Constructors:
-    Person() {}
-
-    Person(int id, string name, string password) {}
-
+    //Constructors: // Mostafa
+    Person() {
+}
+    Person(string id, string name, string password) { // business constructor
+	setID(id);
+	setName(name);
+	setPassword(password);
+}
+    Person(string id, string name, string password, string phonenumber) {
+	setID(id);
+	setName(name);
+	setPassword(password);
+	setPhoneNumber(phonenumber);
+}
     // Setters:
-    void setID(int id) {}
-    void setName(string name) {}
+    void setID(string id) { // Mostafa
+        this->id = id;
+}
 
-    void setPassword(string password) {}
+
 
     //Getters:
     int getID() {}
