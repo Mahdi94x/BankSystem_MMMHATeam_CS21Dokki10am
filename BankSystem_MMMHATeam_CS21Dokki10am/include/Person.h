@@ -12,7 +12,8 @@ class Person
 {
 protected:
     // Attributes:
-    string name, password, id, phonenumber;
+    int id;
+    string name, password, phonenumber;
 
     // Protected Method
     // Time Method:
@@ -29,19 +30,19 @@ public:
     //Constructors: // Mostafa
     Person() {
 }
-    Person(string id, string name, string password) { // business constructor
+    Person(int id, string name, string password) { // business constructor
 	setID(id);
 	setName(name);
 	setPassword(password);
 }
-    Person(string id, string name, string password, string phonenumber) {
+    Person(int id, string name, string password, string phonenumber) {
 	setID(id);
 	setName(name);
 	setPassword(password);
 	setPhoneNumber(phonenumber);
 }
     // Setters:
-    void setID(string id) { // Mostafa
+    void setID(int id) { // Mostafa
         this->id = id;
 }
 
@@ -56,11 +57,13 @@ public:
         }
 
         if (Validation::validateName(name)) {
-            cout << "Thank you for providing the modified name.\n";
+            if(attempt !=0){
+                cout << "Thank you for providing the modified name.\n";
+            }
             this->name = name;
         }
         else {
-            cout << "Max Attempts have been reached! => Setting name to default value\n";
+            cout << "Max Attempts have been reached! => Setting name to default value.\n";
             cout << "Kindly Contact our support ASAP.\n";
             this->name = "default.";
         }
@@ -78,11 +81,13 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validatePassword(password)) {
-            cout << "Thank you for providing the modified password.\n";
+            if(attempt !=0){
+                cout << "Thank you for providing the modified password.\n";
+            }
             this->password = password;
         }
         else {
-            cout << "Max Attempts have been reached! => Setting password to default value\n";
+            cout << "Max Attempts have been reached! => Setting password to default value.\n";
             cout << "Kindly Contact our support ASAP.\n";
             this->password = "************";
         }
@@ -100,17 +105,19 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validatePhoneNumber(phonenumber)) {
-            cout << "Thank you for providing the modified phone number.\n";
+            if(attempt !=0){
+                cout << "Thank you for providing the modified phone number.\n";
+            }
             this->phonenumber = phonenumber;
         }
         else {
-            cout << "Max Attempts have been reached! => Setting phone number to default value\n";
-            cout << "Kindly Contact our support ASAP\n";
+            cout << "Max Attempts have been reached! => Setting phone number to default value.\n";
+            cout << "Kindly Contact our support ASAP.\n";
             this->phonenumber = "00000000000";
         }
 }
     //Getters: // Helal
-    string getID() {
+    int getID() {
         return this->id;
     }
 

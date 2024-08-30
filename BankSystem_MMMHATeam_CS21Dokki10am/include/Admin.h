@@ -14,10 +14,10 @@ public:
 	Admin(){
 		countAdmins++;
 	}
-	Admin(string id, string name, string password) : Employee(id, name, password) {
+	Admin(int id, string name, string password) : Employee(id, name, password) {
 		countAdmins++;
 	}
-	Admin(string id, string name, string password, string phonenumber, double salary):Employee(id, name, password, phonenumber, salary) {
+	Admin(int id, string name, string password, string phonenumber, double salary):Employee(id, name, password, phonenumber, salary) {
 		countAdmins++;
 	}
 

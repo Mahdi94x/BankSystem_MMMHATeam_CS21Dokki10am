@@ -20,11 +20,11 @@ public:
         this->salary = 0;
         countEmployees++;
 }
-    Employee(string id, string name, string password) : Person(id, name, password) {
+    Employee(int id, string name, string password) : Person(id, name, password) {
         this->salary = 0;
         countEmployees++;
 }
-    Employee(string id, string name, string password, string phonenumber, double salary) : Person(id, name, password, phonenumber) {
+    Employee(int id, string name, string password, string phonenumber, double salary) : Person(id, name, password, phonenumber) {
         setSalary(salary);
         countEmployees++;
 }
@@ -43,12 +43,14 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validateSalary(salary)) {
-            cout << "Thank you for providing the modified salary.\n";
+            if(attempt !=0){
+                cout << "Thank you for providing the modified salary.\n";
+            }
             this->salary = salary;
         }
         else {
-            cout << "Max Attempts have been reached! => Setting salary to default value\n";
-            cout << "Kindly Contact our support ASAP\n";
+            cout << "Max Attempts have been reached! => Setting salary to default value.\n";
+            cout << "Kindly Contact our support ASAP.\n";
             this->salary = 0;
         }
 }

@@ -20,7 +20,7 @@ private:
 }
 
     void declinedTransaction() {
-        cout << "Processing...\nTransaction is declined. Please contact the bank for more information.\n";
+        cout << "Processing...\nTransaction is declined. Kindly Contact our support ASAP for more information.\n";
         checkBalance();
         cout << "Time of Transaction => " << getCurrentTime() << endl;
         cout << "==================================================================\n";
@@ -37,6 +37,9 @@ private:
             // Clear the input buffer to avoid issues with getline or other input methods.
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+        if(attempt != 0){
+            cout << "Thank you for providing the modified amount.\n";
         }
 	return amount;
 }
@@ -55,11 +58,11 @@ public:
         this->balance = 0;
         countClients++;
 }
-    Client(string id, string name, string password): Person (id,name,password) {
+    Client(int id, string name, string password): Person (id,name,password) {
         this->balance = 0;
         countClients++;
 }
-    Client(string id, string name, string password, string phonenumber, double balance):Person (id,name,password, phonenumber) {
+    Client(int id, string name, string password, string phonenumber, double balance):Person (id,name,password, phonenumber) {
         setBalance(balance); // this->balance = balance;
         countClients++;
 }
@@ -78,12 +81,14 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validateBalance(balance)) {
-            cout << "Thank you for providing the modified balance.\n";
+            if(attempt !=0){
+                cout << "Thank you for providing the modified balance.\n";
+            }
             this->balance = balance;
         }
         else {
-            cout << "Max Attempts have been reached! => Setting balance to default value\n";
-            cout << "Kindly Contact our support ASAP\n";
+            cout << "Max Attempts have been reached! => Setting balance to default value.\n";
+            cout << "Kindly Contact our support ASAP.\n";
             this->balance = 0;
         }
 }
@@ -104,7 +109,7 @@ public:
                 declinedTransaction();
             }
             else {
-                cout << "Thank you for providing the modified amount.\n";
+
                 this->balance -= amount;
                 acceptedTransaction();
             }
@@ -117,7 +122,6 @@ public:
     void deposite(double amount) { // Mostafa
         amount = updatingAmount(amount);
         if (Validation::validateAmount(amount)) {
-            cout << "Thank you for providing the modified amount.\n";
             this->balance += amount;
             acceptedTransaction();
         }
@@ -133,7 +137,6 @@ public:
                 declinedTransaction();
             }
             else {
-                cout << "Thank you for providing the modified amount.\n";
                 this->balance -= amount;
                 recipient.balance += amount;
                 acceptedTransaction();

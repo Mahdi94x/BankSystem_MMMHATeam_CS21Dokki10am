@@ -48,7 +48,6 @@ public:
 
 #endif // VALIDATION_H
 
-
 #ifndef PERSON_H
 #define PERSON_H
 #include <iostream>
@@ -63,7 +62,8 @@ class Person
 {
 protected:
     // Attributes:
-    string name, password, id, phonenumber;
+    int id;
+    string name, password, phonenumber;
 
     // Protected Method
     // Time Method:
@@ -80,19 +80,19 @@ public:
     //Constructors: // Mostafa
     Person() {
 }
-    Person(string id, string name, string password) { // business constructor
+    Person(int id, string name, string password) { // business constructor
 	setID(id);
 	setName(name);
 	setPassword(password);
 }
-    Person(string id, string name, string password, string phonenumber) {
+    Person(int id, string name, string password, string phonenumber) {
 	setID(id);
 	setName(name);
 	setPassword(password);
 	setPhoneNumber(phonenumber);
 }
     // Setters:
-    void setID(string id) { // Mostafa
+    void setID(int id) { // Mostafa
         this->id = id;
 }
 
@@ -107,11 +107,13 @@ public:
         }
 
         if (Validation::validateName(name)) {
-            cout << "Thank you for providing the modified name.\n";
+            if(attempt !=0){
+                cout << "Thank you for providing the modified name.\n";
+            }
             this->name = name;
         }
         else {
-            cout << "Max Attempts have been reached! => Setting name to default value\n";
+            cout << "Max Attempts have been reached! => Setting name to default value.\n";
             cout << "Kindly Contact our support ASAP.\n";
             this->name = "default.";
         }
@@ -129,11 +131,13 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validatePassword(password)) {
-            cout << "Thank you for providing the modified password.\n";
+            if(attempt !=0){
+                cout << "Thank you for providing the modified password.\n";
+            }
             this->password = password;
         }
         else {
-            cout << "Max Attempts have been reached! => Setting password to default value\n";
+            cout << "Max Attempts have been reached! => Setting password to default value.\n";
             cout << "Kindly Contact our support ASAP.\n";
             this->password = "************";
         }
@@ -151,17 +155,19 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validatePhoneNumber(phonenumber)) {
-            cout << "Thank you for providing the modified phone number.\n";
+            if(attempt !=0){
+                cout << "Thank you for providing the modified phone number.\n";
+            }
             this->phonenumber = phonenumber;
         }
         else {
-            cout << "Max Attempts have been reached! => Setting phone number to default value\n";
-            cout << "Kindly Contact our support ASAP\n";
+            cout << "Max Attempts have been reached! => Setting phone number to default value.\n";
+            cout << "Kindly Contact our support ASAP.\n";
             this->phonenumber = "00000000000";
         }
 }
     //Getters: // Helal
-    string getID() {
+    int getID() {
         return this->id;
     }
 
@@ -183,7 +189,6 @@ public:
 };
 
 #endif // PERSON_H
-
 
 #ifndef CLIENT_H
 #define CLIENT_H
@@ -207,7 +212,7 @@ private:
 }
 
     void declinedTransaction() {
-        cout << "Processing...\nTransaction is declined. Please contact the bank for more information.\n";
+        cout << "Processing...\nTransaction is declined. Kindly Contact our support ASAP for more information.\n";
         checkBalance();
         cout << "Time of Transaction => " << getCurrentTime() << endl;
         cout << "==================================================================\n";
@@ -224,6 +229,9 @@ private:
             // Clear the input buffer to avoid issues with getline or other input methods.
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+        if(attempt != 0){
+            cout << "Thank you for providing the modified amount.\n";
         }
 	return amount;
 }
@@ -242,11 +250,11 @@ public:
         this->balance = 0;
         countClients++;
 }
-    Client(string id, string name, string password): Person (id,name,password) {
+    Client(int id, string name, string password): Person (id,name,password) {
         this->balance = 0;
         countClients++;
 }
-    Client(string id, string name, string password, string phonenumber, double balance):Person (id,name,password, phonenumber) {
+    Client(int id, string name, string password, string phonenumber, double balance):Person (id,name,password, phonenumber) {
         setBalance(balance); // this->balance = balance;
         countClients++;
 }
@@ -265,12 +273,14 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validateBalance(balance)) {
-            cout << "Thank you for providing the modified balance.\n";
+            if(attempt !=0){
+                cout << "Thank you for providing the modified balance.\n";
+            }
             this->balance = balance;
         }
         else {
-            cout << "Max Attempts have been reached! => Setting balance to default value\n";
-            cout << "Kindly Contact our support ASAP\n";
+            cout << "Max Attempts have been reached! => Setting balance to default value.\n";
+            cout << "Kindly Contact our support ASAP.\n";
             this->balance = 0;
         }
 }
@@ -291,7 +301,7 @@ public:
                 declinedTransaction();
             }
             else {
-                cout << "Thank you for providing the modified amount.\n";
+
                 this->balance -= amount;
                 acceptedTransaction();
             }
@@ -304,7 +314,6 @@ public:
     void deposite(double amount) { // Mostafa
         amount = updatingAmount(amount);
         if (Validation::validateAmount(amount)) {
-            cout << "Thank you for providing the modified amount.\n";
             this->balance += amount;
             acceptedTransaction();
         }
@@ -320,7 +329,6 @@ public:
                 declinedTransaction();
             }
             else {
-                cout << "Thank you for providing the modified amount.\n";
                 this->balance -= amount;
                 recipient.balance += amount;
                 acceptedTransaction();
@@ -344,7 +352,6 @@ public:
 
 #endif // CLIENT_H
 
-
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 #include <iostream>
@@ -367,11 +374,11 @@ public:
         this->salary = 0;
         countEmployees++;
 }
-    Employee(string id, string name, string password) : Person(id, name, password) {
+    Employee(int id, string name, string password) : Person(id, name, password) {
         this->salary = 0;
         countEmployees++;
 }
-    Employee(string id, string name, string password, string phonenumber, double salary) : Person(id, name, password, phonenumber) {
+    Employee(int id, string name, string password, string phonenumber, double salary) : Person(id, name, password, phonenumber) {
         setSalary(salary);
         countEmployees++;
 }
@@ -390,12 +397,14 @@ public:
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
         if (Validation::validateSalary(salary)) {
-            cout << "Thank you for providing the modified salary.\n";
+            if(attempt !=0){
+                cout << "Thank you for providing the modified salary.\n";
+            }
             this->salary = salary;
         }
         else {
-            cout << "Max Attempts have been reached! => Setting salary to default value\n";
-            cout << "Kindly Contact our support ASAP\n";
+            cout << "Max Attempts have been reached! => Setting salary to default value.\n";
+            cout << "Kindly Contact our support ASAP.\n";
             this->salary = 0;
         }
 }
@@ -418,7 +427,6 @@ public:
 
 #endif // EMPLOYEE_H
 
-
 #ifndef ADMIN_H
 #define ADMIN_H
 #include <iostream>
@@ -435,10 +443,10 @@ public:
 	Admin(){
 		countAdmins++;
 	}
-	Admin(string id, string name, string password) : Employee(id, name, password) {
+	Admin(int id, string name, string password) : Employee(id, name, password) {
 		countAdmins++;
 	}
-	Admin(string id, string name, string password, string phonenumber, double salary):Employee(id, name, password, phonenumber, salary) {
+	Admin(int id, string name, string password, string phonenumber, double salary):Employee(id, name, password, phonenumber, salary) {
 		countAdmins++;
 	}
 
@@ -451,8 +459,6 @@ public:
 
 #endif // ADMIN_H
 
-
-// main.cpp code
 #include <iostream>
 using namespace std;
 #include "Client.h"
@@ -463,25 +469,31 @@ int Admin::countAdmins = 0;
 
 
 int main() {
-    // Test 1: Creating and displaying a Client object => Testing Validation (name,password, phoneNumber,balance)
-    Client client1("C001", "Ali", "StrongPass123456789101215", "34567890", 200.0);
+    // Test 1: Creating and displaying a Client object =>
+    // Testing Validation (name,password, phoneNumber,balance)
+    cout << "Test 1:\n";
+    Client client1(1, "Ali", "StrongPass123456789101215", "34567890", 200.0);
     cout << "Client 1 Details:\n";
     client1.display();
 
     // Test 2: Checking balance
+    cout << "Test 2:\n";
     client1.checkBalance();
     cout << "==================================================================\n";
 
     // Test 3: Depositing money
+    cout << "Test 3:\n";
     cout << "Depositing 500 into Client 1's account.\n";
     client1.deposite(500);
 
     // Test 4: Withdrawing money
+    cout << "Test 4:\n";
     cout << "Withdrawing 1000 from Client 1's account.\n";
     client1.withdraw(1000);
 
     // Test 5: Transferring money between Clients
-    Client client2("C002", "Bob Smith", "AnotherPass123", "09876543210", 3000.0);
+    cout << "Test 5:\n";
+    Client client2(2, "Bob Smith", "AnotherPass123", "09876543210", 3000.0);
     cout << "Transferring 500 from Client 1 to Client 2.\n";
     client1.transferTo(client2, 50); // Validation of amount
     cout << "Checking the balance of both accounts after the transferTo: \n";
@@ -490,20 +502,24 @@ int main() {
     cout << "==================================================================\n";
 
     // Test 6: Creating and displaying an Employee object
-    Employee employee1("E001", "John Doe", "EmpPass123", "01122334455", 6000.0);
+    cout << "Test 6:\n";
+    Employee employee1(1, "John Doe", "EmpPass123", "01122334455", 6000.0);
     cout << "Employee 1 Details:\n";
     employee1.display();
 
     // Test 7: Checking salary
+    cout << "Test 7:\n";
     cout << "Employee's Salary: " << employee1.getSalary() << endl;
     cout << "==================================================================\n";
 
     // Test 8: Creating and displaying an Admin object
-    Admin admin1("A001", "Admin Jane", "AdminPass123", "07788990011", 10000.0);
+    cout << "Test 8:\n";
+    Admin admin1(1, "Admin Jane", "AdminPass123", "07788990011", 10000.0);
     cout << "Admin 1 Details:\n";
     admin1.display();
 
-    // Test 7: Checking salary
+    // Test 9: Checking salary
+    cout << "Test 9:\n";
     cout << "Admin's Salary: " << admin1.getSalary() << endl;
     cout << "==================================================================\n";
 
@@ -515,3 +531,4 @@ int main() {
 
     return 0;
 }
+
