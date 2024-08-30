@@ -29,17 +29,18 @@ protected:
 public:
     //Constructors: // Mostafa
     Person() {
+        this->id = 0;
 }
     Person(int id, string name, string password) { // business constructor
-	setID(id);
-	setName(name);
-	setPassword(password);
+        setID(id);
+        setName(name);
+        setPassword(password);
 }
     Person(int id, string name, string password, string phonenumber) {
-	setID(id);
-	setName(name);
-	setPassword(password);
-	setPhoneNumber(phonenumber);
+        setID(id);
+        setName(name);
+        setPassword(password);
+        setPhoneNumber(phonenumber);
 }
     // Setters:
     void setID(int id) { // Mostafa

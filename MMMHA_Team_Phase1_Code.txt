@@ -79,6 +79,7 @@ protected:
 public:
     //Constructors: // Mostafa
     Person() {
+	this -> id = 0;
 }
     Person(int id, string name, string password) { // business constructor
 	setID(id);
