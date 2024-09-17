@@ -1,0 +1,100 @@
+#pragma once
+
+#include <iostream>
+#include "Employee.h"
+#include <string>
+using namespace std;
+extern vector <Employee> employeesVector;
+
+class Admin : public Employee // Mahdi
+{
+private:
+	 bool isActive() {
+		if (Validation::isAccountActive(getName(), getPassword(), getPhoneNumber(), salary, false)) {
+			return true;
+		}
+		else {
+			cout << "Account is frozen. Kindly Contact your IT Manager ASAP for more information.\n";
+			return false;
+		}
+	 }
+public:
+	//Attributes:
+	static int countAdmins;
+
+	//Constructors:
+	Admin() : Employee() {
+		countAdmins++;
+	}
+	Admin(int id, string name, string password) : Employee(id, name, password) {
+		countAdmins++;
+	}
+	Admin(int id, string name, string password, string phonenumber, double salary) :Employee(id, name, password, phonenumber, salary) {
+		countAdmins++;
+	}
+
+	//Methods:
+	void display() {
+		cout << "Admin's Authority" << endl;
+		Employee::display();
+	}
+	
+	//Mahdi
+	void addEmployee(); // Declaration only duo to circular dependency
+
+	//Mahdi
+	Employee* searchEmployee(int id) {
+		if (!isActive()) {
+			throw "Account is frozen. Kindly Contact your IT Manager ASAP for more information.\n";
+		}
+		Employee* temp = nullptr;
+		for (int i = 0; i < employeesVector.size(); i++) {
+			if (employeesVector[i].getID() == id) {
+				temp = &employeesVector[i];
+				return temp;
+			}
+		}
+		cout << "Employee's ID not found.\n";
+		temp = nullptr;
+		return temp;
+	}
+
+	//Mahdi
+	void listEmployee() {
+		if (!isActive()) {
+			return;
+		}
+		for (int i = 0; i < employeesVector.size(); i++) {
+			employeesVector[i].display();
+		}
+	}
+
+	//Mahdi
+	void editEmployee(int id, string name, string password, string phonenumber, double salary) {
+		if (!isActive()) {
+			return;
+		}
+		Employee* temp = searchEmployee(id);
+		if (temp != nullptr) {
+			cout << "Employee's ID: " << id << " is Found." << endl;
+			temp->setName(name);
+			temp->setPassword(password);
+			temp->setPhoneNumber(phonenumber);
+			temp->setSalary(salary);
+			cout << "Employee's ID: " << temp->getID() << " is Edited." << endl;
+			temp->display();
+			return;
+		}
+	}
+
+	//Mahdi
+	Employee reactivateEmployee(int id) {
+		Employee* temp = searchEmployee(id);
+		if (temp != nullptr) {
+			editClient(id, temp->getName(), temp->getPassword(), temp->getPhoneNumber(), temp->getSalary());
+			cout << "Employee with ID " << id << " has been reactivated." << endl;
+			return *temp;
+		}
+	}
+};
+
