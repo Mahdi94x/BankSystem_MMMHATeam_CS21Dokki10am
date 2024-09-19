@@ -90,7 +90,7 @@ int main() {
 	*/
 
 	// *************** Testing of Phase 2 ***************
-	/*
+	
 	// Test 1: Loading existing clients, employees, and admins from txt files
 	cout << "Test 1:Loading existing clients, employees, and admins from txt files\n";
 	cout << "Testing Parser Class and FileHelper Class\n";
@@ -103,7 +103,7 @@ int main() {
 	cout << "Number of admins: " << adminsVector.size() << endl;
 	cout << "==================================================================\n";
 	system("pause");
-	
+	/*
 	// Test 2: Adding a new Client, Employee, and Admin to the system, vector, and txt file
 	cout << "Test 2: Adding a new Client, Employee, and Admin to the system, vector, and txt file\n";
 	cout << "Testing FileHelper Class (ID Section saving and storing)\n";
