@@ -19,5 +19,8 @@ public:
 	virtual void removeAllClients() = 0;
 	virtual void removeAllEmployees() = 0;
 	virtual void removeAllAdmin() = 0;
+	virtual void exportAllClients() = 0;
+	virtual void exportAllEmployees() = 0;
+	virtual void exportAllAdmins() = 0;
 };
 

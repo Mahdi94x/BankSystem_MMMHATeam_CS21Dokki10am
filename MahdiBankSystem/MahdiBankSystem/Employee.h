@@ -3,6 +3,7 @@
 #include <string>
 #include "Client.h"
 using namespace std;
+
 extern vector <Client> clientsVector;
 
 class Employee : public Person
@@ -71,10 +72,10 @@ public:
 	double getSalary() { // Hadeer
 		return this->salary;
 	}
-	
+
 
 	//Methods:
-	
+
 
 	virtual void display() { // Helal
 		Person::display();
@@ -82,8 +83,10 @@ public:
 		cout << "======================================\n";
 	}
 
-	//Mahdi
-	void addClient(); // Declaration only duo to circular dependency
+	//Mahdi // Declaration only duo to circular dependency
+	void addClient();
+	Client reactivateClient(int id);
+	void editClient(int id, string name, string password, string phonenumber, double balance);
 
 	//Mahdi
 	Client* searchClient(int id) {
@@ -112,32 +115,18 @@ public:
 		}
 	}
 
-	//Mahdi
-	void editClient(int id,string name,string password,string phonenumber, double balance) {
+	void displayClient(int id) {
 		if (!isActive()) {
 			return;
 		}
 		Client* temp = searchClient(id);
 		if (temp != nullptr) {
-			cout << "Client's ID: " << id << " is Found." << endl;
-			temp->setName(name);
-			temp->setPassword(password);
-			temp->setPhoneNumber(phonenumber);
-			temp->setBalance(balance);
-			cout << "Client's ID: " << temp->getID() << " is Edited." << endl;
 			temp->display();
-			return;
 		}
 	}
 
-	//Mahdi
-	Client reactivateClient(int id) {
-		Client* temp = searchClient(id);
-		if (temp != nullptr) {
-			editClient(id, temp->getName(), temp->getPassword(), temp->getPhoneNumber(), temp->getBalance());
-			cout << "Client with ID " << id << " has been reactivated." << endl;
-			return *temp;
-		}
+	virtual void checkSalary() {
+		cout << "Current Salary of Employee's ID: " << getID() << " is => " << getSalary() << " EGP." << endl;
 	}
 };
 

@@ -55,5 +55,17 @@ public:
 		FileHelper::clearFile("Admin.txt", "AdminLastID.txt");
 		adminsVector.clear();
 	}
+
+	void exportAllClients() {
+		FileHelper::updateClients();
+	}
+
+	void exportAllEmployees() {
+		FileHelper::updateEmployees();
+	}
+
+	void exportAllAdmins() {
+		FileHelper::updateAdmins();
+	}
 };
 

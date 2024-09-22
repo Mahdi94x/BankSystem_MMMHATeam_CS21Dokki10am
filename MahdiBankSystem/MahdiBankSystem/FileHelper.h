@@ -33,12 +33,13 @@ public:
 			myFile >> last;
 			myFile.close();
 		}
-		int lastID = stoi(last)+1;
+		int lastID = stoi(last) + 1;
 		return lastID;
 	}
 
 	//Helal
 	static void saveClient(Client c) {
+		clientsVector.push_back(c);
 		fstream myFile;
 		string clientInfo = to_string(c.getID()) + '~' + c.getName() + '~' + c.getPassword() + '~' + c.getPhoneNumber() + '~' + to_string(c.getBalance());
 		myFile.open("Client.txt", ios::app);
@@ -47,8 +48,6 @@ public:
 			myFile.close();
 		}
 		saveLastID("ClientLastID.txt", c.getID());
-
-		clientsVector.push_back(c);
 	}
 
 	//Helal
@@ -65,12 +64,13 @@ public:
 				}
 			}
 			myFile.close();
-			cout << "Clients Loaded Successfully\n";
+			//cout << "Clients Loaded Successfully\n";
 		}
 	}
-	
+
 	//Hadeer
-	static void saveEmployee( Employee e) {
+	static void saveEmployee(Employee e) {
+		employeesVector.push_back(e);
 		fstream myFile;
 		string info = to_string(e.getID()) + '~' + e.getName() + '~' + e.getPassword() + '~' + e.getPhoneNumber() + '~' + to_string(e.getSalary());
 		myFile.open("Employee.txt", ios::app);
@@ -79,7 +79,6 @@ public:
 			myFile.close();
 		}
 		saveLastID("EmployeeLastID.txt", e.getID());
-		employeesVector.push_back(e);
 	}
 
 	//Hadeer
@@ -96,13 +95,13 @@ public:
 				}
 			}
 			myFile.close();
-			cout << "Employees Loaded Successfully\n";
+			//cout << "Employees Loaded Successfully\n";
 		}
-			
 	}
-	
+
 	//Mostafa
-	static void saveAdmin( Admin a) {
+	static void saveAdmin(Admin a) {
+		adminsVector.push_back(a);
 		fstream myFile;
 		string info = to_string(a.getID()) + '~' + a.getName() + '~' + a.getPassword() + '~' + a.getPhoneNumber() + '~' + to_string(a.getSalary());
 		myFile.open("Admin.txt", ios::app);
@@ -111,7 +110,6 @@ public:
 			myFile.close();
 		}
 		saveLastID("AdminLastID.txt", a.getID());
-		adminsVector.push_back(a);
 	}
 
 	//Mostafa
@@ -128,8 +126,8 @@ public:
 				}
 			}
 			myFile.close();
-			cout << "Admins Loaded Successfully\n";
-		}	
+			//cout << "Admins Loaded Successfully\n";
+		}
 	}
 
 	//Mohamed
@@ -148,7 +146,7 @@ public:
 	}
 
 	//Mahdi
-	static void exportClients() {
+	static void updateClients() {
 		fstream myFile;
 		myFile.open("Client.txt", ios::out);
 		if (myFile.is_open()) {
@@ -161,7 +159,7 @@ public:
 	}
 
 	//Mahdi
-	static void exportEmployees() {
+	static void updateEmployees() {
 		fstream myFile;
 		myFile.open("Employee.txt", ios::out);
 		if (myFile.is_open()) {
@@ -174,7 +172,7 @@ public:
 	}
 
 	//Mahdi
-	static void exportAdmins() {
+	static void updateAdmins() {
 		fstream myFile;
 		myFile.open("Admin.txt", ios::out);
 		if (myFile.is_open()) {

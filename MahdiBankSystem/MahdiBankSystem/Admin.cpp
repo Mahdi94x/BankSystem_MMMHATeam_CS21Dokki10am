@@ -3,7 +3,6 @@
 #include "FileManager.h"
 
 int Admin::countAdmins = 0;
-
 //Mahdi
 void Admin::addEmployee() {
 	if (!isActive()) {
@@ -27,4 +26,34 @@ void Admin::addEmployee() {
 	fm.addEmployee(eNew);
 	FileHelper::saveLastID("EmployeeLastID.txt", id);
 	cout << "Employee added successfully.\n";
+}
+
+void Admin::editEmployee(int id, string name, string password, string phonenumber, double salary) {
+	if (!isActive()) {
+		return;
+	}
+	Employee* temp = searchEmployee(id);
+	if (temp != nullptr) {
+		FileManager fm;
+		temp->setName(name);
+		temp->setPassword(password);
+		temp->setPhoneNumber(phonenumber);
+		temp->setSalary(salary);
+		cout << "Employee's ID: " << temp->getID() << " is Edited." << endl;
+		fm.exportAllEmployees();
+		temp->display();
+		return;
+	}
+}
+
+Employee Admin::reactivateEmployee(int id) {
+	Employee* temp = searchEmployee(id);
+	if (temp != nullptr) {
+		FileManager fm;
+		cout << "Employee's ID: " << id << " is Found." << endl;
+		editEmployee(id, temp->getName(), temp->getPassword(), temp->getPhoneNumber(), temp->getSalary());
+		cout << "Employee's ID " << id << " has been reactivated." << endl;
+		fm.exportAllEmployees();
+		return *temp;
+	}
 }

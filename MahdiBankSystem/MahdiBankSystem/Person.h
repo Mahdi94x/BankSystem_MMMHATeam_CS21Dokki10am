@@ -72,7 +72,7 @@ public:
 			cout << "Max Attempts have been reached! => Setting name to default value.\n";
 			cout << "Kindly Contact our support ASAP.\n";
 			this->name = "default123.";
-			
+
 		}
 	}
 	void setPassword(string password) { // Amira
@@ -97,7 +97,7 @@ public:
 			cout << "Max Attempts have been reached! => Setting password to default value.\n";
 			cout << "Kindly Contact our support ASAP.\n";
 			this->password = "****";
-			
+
 		}
 	}
 	void setPhoneNumber(string phonenumber) { // Mahdi
@@ -122,7 +122,7 @@ public:
 			cout << "Max Attempts have been reached! => Setting phone number to default value.\n";
 			cout << "Kindly Contact our support ASAP.\n";
 			this->phonenumber = "0000";
-			
+
 		}
 	}
 

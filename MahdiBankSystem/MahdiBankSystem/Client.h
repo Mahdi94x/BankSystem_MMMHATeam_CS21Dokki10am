@@ -2,6 +2,8 @@
 
 #include "Person.h"
 #include "Validation.h"
+#include <vector>
+#include <iterator>
 using namespace std;
 
 class Client : public Person
@@ -58,7 +60,7 @@ private:
 		cout << "Apologies! The amount you entered does not meet the requirements!\n";
 		declinedTransaction();
 	}
-	
+
 
 public:
 	//Attributes: //Hadeer
@@ -113,62 +115,11 @@ public:
 	void checkBalance() { // Amira
 		cout << "Current Balance of Account's ID: " << getID() << " is => " << getBalance() << " EGP." << endl;
 	}
-	void withdraw(double amount) { // Mahdi
-		if (isActive() == false) {
-			declinedTransaction();
-			return;
-		}
-		amount = updatingAmount(amount);
-		if (Validation::validateAmount(amount)) {
-			if (amount > balance) {
-				declinedTransaction();
-			}
-			else {
+	void withdraw(double amount); // Mahdi
 
-				this->balance -= amount;
-				acceptedTransaction();
-			}
-		}
-		else {
-			declinedAmount();
-		}
-	}
+	void deposite(double amount); // Mostafa
 
-	void deposite(double amount) { // Mostafa
-		if (isActive()==false) {
-			declinedTransaction();
-			return;
-		}
-		amount = updatingAmount(amount);
-		if (Validation::validateAmount(amount)) {
-			this->balance += amount;
-			acceptedTransaction();
-		}
-		else {
-			declinedAmount();
-		}
-	}
-
-	void transferTo(Client& recipient, double amount) { // Mahdi
-		if (isActive() == false) {
-			declinedTransaction();
-			return;
-		}
-		amount = updatingAmount(amount);
-		if (Validation::validateAmount(amount)) {
-			if (amount > balance) {
-				declinedTransaction();
-			}
-			else {
-				this->balance -= amount;
-				recipient.balance += amount;
-				acceptedTransaction();
-			}
-		}
-		else {
-			declinedAmount();
-		}
-	}
+	void transferTo(Client& recipient, double amount); // Mahdi
 
 	void display() { // Mostafa
 		Person::display();
@@ -177,4 +128,3 @@ public:
 	}
 
 };
-
