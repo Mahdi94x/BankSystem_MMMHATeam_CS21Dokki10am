@@ -64,7 +64,6 @@ public:
 				}
 			}
 			myFile.close();
-			//cout << "Clients Loaded Successfully\n";
 		}
 	}
 
@@ -95,7 +94,6 @@ public:
 				}
 			}
 			myFile.close();
-			//cout << "Employees Loaded Successfully\n";
 		}
 	}
 
@@ -126,7 +124,6 @@ public:
 				}
 			}
 			myFile.close();
-			//cout << "Admins Loaded Successfully\n";
 		}
 	}
 

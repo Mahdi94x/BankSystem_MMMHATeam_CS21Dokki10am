@@ -23,4 +23,3 @@ public:
 	virtual void exportAllEmployees() = 0;
 	virtual void exportAllAdmins() = 0;
 };
-
