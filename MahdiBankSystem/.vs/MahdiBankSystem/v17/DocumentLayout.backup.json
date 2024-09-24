@@ -3,52 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Screens.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Screens.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\MahdiBankSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\MahdiBankSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\EmployeeManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\EmployeeManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\ClientManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\ClientManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\FileManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\FileManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\FileHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\FileHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Parser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Parser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\DataSourceInterface.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\DataSourceInterface.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Admin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Admin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Admin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Admin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Employee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Employee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Screens.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Screens.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -59,16 +19,56 @@
       "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Client.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Admin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Admin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Employee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Employee.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Employee.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\FileManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\FileManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\FileHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\FileHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\DataSourceInterface.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\DataSourceInterface.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\AdminManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\AdminManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\EmployeeManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\EmployeeManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\MahdiBankSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\MahdiBankSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Parser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Parser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Admin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Admin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Person.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Validation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\Validation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\AdminManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AFB52951-D8CE-4E9C-9333-33C879BA094A}|MahdiBankSystem\\MahdiBankSystem.vcxproj|solutionrelative:MahdiBankSystem\\AdminManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,11 +78,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "MahdiBankSystem.cpp",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\MahdiBankSystem.cpp",
               "RelativeDocumentMoniker": "MahdiBankSystem\\MahdiBankSystem.cpp",
@@ -91,12 +91,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAKYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-08T22:57:29.295Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Validation.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Validation.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\Validation.h",
@@ -105,12 +104,11 @@
               "ViewState": "AgIAACwAAAAAAAAAAAAmwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-08T22:59:13.936Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Person.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Person.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\Person.h",
@@ -119,18 +117,17 @@
               "ViewState": "AgIAAIMAAAAAAAAAAAAmwJkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-08T23:00:09.085Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "Client.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Client.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\Client.h",
               "ToolTip": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Client.h",
               "RelativeToolTip": "MahdiBankSystem\\Client.h",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAmwIIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAswB4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-08T23:01:02.272Z",
               "IsPinned": true,
@@ -138,13 +135,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "Client.cpp",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Client.cpp",
               "RelativeDocumentMoniker": "MahdiBankSystem\\Client.cpp",
               "ToolTip": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Client.cpp",
               "RelativeToolTip": "MahdiBankSystem\\Client.cpp",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAmwEMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-22T19:07:28.428Z",
               "IsPinned": true,
@@ -152,13 +149,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "Employee.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Employee.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\Employee.h",
               "ToolTip": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Employee.h",
               "RelativeToolTip": "MahdiBankSystem\\Employee.h",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAmwIQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAmwIQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-08T23:02:00.496Z",
               "IsPinned": true,
@@ -166,13 +163,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "Employee.cpp",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Employee.cpp",
               "RelativeDocumentMoniker": "MahdiBankSystem\\Employee.cpp",
               "ToolTip": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Employee.cpp",
               "RelativeToolTip": "MahdiBankSystem\\Employee.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-08T23:21:05.851Z",
               "IsPinned": true,
@@ -180,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Admin.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Admin.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\Admin.h",
@@ -189,18 +186,17 @@
               "ViewState": "AgIAAEQAAAAAAAAAAAAmwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-08T23:03:28.265Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Admin.cpp",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Admin.cpp",
               "RelativeDocumentMoniker": "MahdiBankSystem\\Admin.cpp",
               "ToolTip": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Admin.cpp",
               "RelativeToolTip": "MahdiBankSystem\\Admin.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAmwDoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-09T00:15:44.135Z",
               "IsPinned": true,
@@ -208,13 +204,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "DataSourceInterface.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\DataSourceInterface.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\DataSourceInterface.h",
               "ToolTip": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\DataSourceInterface.h",
               "RelativeToolTip": "MahdiBankSystem\\DataSourceInterface.h",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAmwBoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-08T23:04:08.107Z",
               "IsPinned": true,
@@ -222,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Parser.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Parser.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\Parser.h",
@@ -231,18 +227,17 @@
               "ViewState": "AgIAACwAAAAAAAAAAAAmwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-08T23:05:12.922Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "FileHelper.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\FileHelper.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\FileHelper.h",
               "ToolTip": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\FileHelper.h",
               "RelativeToolTip": "MahdiBankSystem\\FileHelper.h",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAmwKwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAswDEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-08T23:05:52.87Z",
               "IsPinned": true,
@@ -250,13 +245,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "FileManager.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\FileManager.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\FileManager.h",
               "ToolTip": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\FileManager.h",
               "RelativeToolTip": "MahdiBankSystem\\FileManager.h",
-              "ViewState": "AgIAADEAAAAAAAAAAAAmwEcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAmwAwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-08T23:06:32.261Z",
               "IsPinned": true,
@@ -264,13 +259,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ClientManager.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\ClientManager.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\ClientManager.h",
               "ToolTip": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\ClientManager.h",
               "RelativeToolTip": "MahdiBankSystem\\ClientManager.h",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAmwHEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-17T19:57:26.432Z",
               "IsPinned": true,
@@ -278,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "EmployeeManager.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\EmployeeManager.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\EmployeeManager.h",
@@ -292,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "AdminManager.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\AdminManager.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\AdminManager.h",
@@ -306,13 +301,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Screens.h",
               "DocumentMoniker": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Screens.h",
               "RelativeDocumentMoniker": "MahdiBankSystem\\Screens.h",
               "ToolTip": "C:\\Users\\arrow\\Desktop\\Route CS Codes\\Assignments\\Project 2 - BankSystem\\TeamTrails\\MahdiBankSystem\\MahdiBankSystem\\Screens.h",
               "RelativeToolTip": "MahdiBankSystem\\Screens.h",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-17T20:10:25.23Z",
               "IsPinned": true,
