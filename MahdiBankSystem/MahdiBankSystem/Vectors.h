@@ -9,5 +9,3 @@ using namespace std;
 
 extern vector<Client> clientsVector;
 extern vector<Employee> employeesVector;
-extern vector<Admin> adminsVector;
-

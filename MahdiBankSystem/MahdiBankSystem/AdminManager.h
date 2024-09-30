@@ -73,10 +73,8 @@ public:
 	}
 
 	static Admin* login(int id, string password) { // Hadeer
-		for (Admin& a : adminsVector) {
-			if (a.getID() == id && a.getPassword() == password) {
-				return &a;
-			}
+		if (Admin::getInstance()->getID() == id && Admin::getInstance()->getPassword() == password) {
+			return Admin::getInstance();
 		}
 		cout << "Invalid ID or Password!" << endl;
 		return nullptr;
@@ -85,6 +83,7 @@ public:
 	static bool adminOptions(Admin* a, int choice) {
 
 		switch (choice) {
+
 		case 1: // Mohammed
 			a->checkSalary();
 			break;

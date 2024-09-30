@@ -41,19 +41,16 @@ public:
 	// Mohamed
 	void removeAllClients() {
 		FileHelper::clearFile("Client.txt", "ClientLastID.txt");
-		clientsVector.clear();
 	}
 
 	//Mohamed
 	void removeAllEmployees() {
 		FileHelper::clearFile("Employee.txt", "EmployeeLastID.txt");
-		employeesVector.clear();
 	}
 
 	//Mohamed
 	void removeAllAdmin() {
 		FileHelper::clearFile("Admin.txt", "AdminLastID.txt");
-		adminsVector.clear();
 	}
 
 	void exportAllClients() {

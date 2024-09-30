@@ -26,7 +26,6 @@ void Employee::addClient() {
 	cin >> balance;
 	Client cNew(id, name, password, phoneNumber, balance);
 	fm.addClient(cNew);
-	FileHelper::saveLastID("ClientLastID.txt", id);
 	cout << "Client added successfully.\n";
 }
 

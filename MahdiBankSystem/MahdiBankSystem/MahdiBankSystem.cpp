@@ -1,18 +1,28 @@
-/*#include <iostream>
+#include <iostream>
 #include "FileHelper.h"
-#include "FileManager.h"*/
+#include "FileManager.h"
+using namespace std;
 #include "Screens.h"
-//using namespace std;
-
 
 int main() {
 
 	// *************** Testing of Phase 3 ***************
 	Screens::runApp();
+
+	// *************** Testing of Singelton Design Pattern ***************
+	/*FileManager f1;
+	f1.getAllEmployees();
+	f1.getAllClients();
+	f1.getAllAdmins();
+	cout << "Number of clients: " << clientsVector.size() << endl; // 15
+	cout << "Number of employees: " << employeesVector.size() << endl; //10
+	cout << "Number of admins: " << Admin::countAdmins << endl; //1
+	Admin::getInstance()->display();
+	Admin::getInstance()->setName("Maged Ali");
+	Admin::getInstance()->display();
+	f1.exportAllAdmins();*/
 	return 0;
 }
-
-
 
 // *************** Testing of Phase 1 ***************
 /*

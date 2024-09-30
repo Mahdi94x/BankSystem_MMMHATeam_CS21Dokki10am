@@ -99,10 +99,9 @@ public:
 
 	//Mostafa
 	static void saveAdmin(Admin a) {
-		adminsVector.push_back(a);
 		fstream myFile;
 		string info = to_string(a.getID()) + '~' + a.getName() + '~' + a.getPassword() + '~' + a.getPhoneNumber() + '~' + to_string(a.getSalary());
-		myFile.open("Admin.txt", ios::app);
+		myFile.open("Admin.txt", ios::out);
 		if (myFile.is_open()) {
 			myFile << info << endl;
 			myFile.close();
@@ -118,9 +117,13 @@ public:
 		if (myFile.is_open()) {
 			while (getline(myFile, adminLine)) {
 				vector<vector<string>> allData = Parser::split(adminLine);
-				for (auto attributes : allData) { // int and string attributes so we use auto key word to handle it
-					Admin admobj = Parser::parseToAdmin(attributes);
-					adminsVector.push_back(admobj);
+				for (auto attributes : allData) { // int and string attributes so we use auto keyword to handle it
+					int id = stoi(attributes[0]);
+					string name = attributes[1];
+					string password = attributes[2];
+					string phonenumber = attributes[3];
+					double salary = stod(attributes[4]);
+					Admin* superAdmin = Admin::getInstance(id, name, password, phonenumber, salary);
 				}
 			}
 			myFile.close();
@@ -173,10 +176,8 @@ public:
 		fstream myFile;
 		myFile.open("Admin.txt", ios::out);
 		if (myFile.is_open()) {
-			for (int i = 0; i < adminsVector.size(); i++) {
-				string adminInfo = to_string(adminsVector[i].getID()) + '~' + adminsVector[i].getName() + '~' + adminsVector[i].getPassword() + '~' + adminsVector[i].getPhoneNumber() + '~' + to_string(adminsVector[i].getSalary());
-				myFile << adminInfo << endl;
-			}
+			string adminInfo = to_string(Admin::getInstance()->getID()) + '~' + Admin::getInstance()->getName() + '~' + Admin::getInstance()->getPassword() + '~' + Admin::getInstance()->getPhoneNumber() + '~' + to_string(Admin::getInstance()->getSalary());
+			myFile << adminInfo << endl;
 			myFile.close();
 		}
 	}

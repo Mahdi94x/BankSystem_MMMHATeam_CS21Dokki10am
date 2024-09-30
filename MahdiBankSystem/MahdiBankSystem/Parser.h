@@ -52,15 +52,5 @@ public:
 		double salary = stod(singleLineAttributes[4]);
 		return Employee(id, name, password, phonenumber, salary);
 	}
-
-	//Mostafa
-	static Admin parseToAdmin(vector<string> singleLineAttributes) {
-		int id = stoi(singleLineAttributes[0]);
-		string name = singleLineAttributes[1];
-		string password = singleLineAttributes[2];
-		string phonenumber = singleLineAttributes[3];
-		double salary = stod(singleLineAttributes[4]);
-		return Admin(id, name, password, phonenumber, salary);
-	}
 };
 

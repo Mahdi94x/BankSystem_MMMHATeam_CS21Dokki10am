@@ -14,6 +14,6 @@
   Validation.cpp
   Vectors.cpp
   Generating Code...
-C:\Users\arrow\Desktop\Route CS Codes\Assignments\Project 2 - BankSystem\TeamTrails\MahdiBankSystem\MahdiBankSystem\Employee.cpp(62,1): warning C4715: 'Employee::reactivateClient': not all control paths return a value
-C:\Users\arrow\Desktop\Route CS Codes\Assignments\Project 2 - BankSystem\TeamTrails\MahdiBankSystem\MahdiBankSystem\Admin.cpp(59,1): warning C4715: 'Admin::reactivateEmployee': not all control paths return a value
+C:\Users\arrow\Desktop\Route CS Codes\Assignments\Project 2 - BankSystem\TeamTrails\MahdiBankSystem\MahdiBankSystem\Employee.cpp(61,1): warning C4715: 'Employee::reactivateClient': not all control paths return a value
+C:\Users\arrow\Desktop\Route CS Codes\Assignments\Project 2 - BankSystem\TeamTrails\MahdiBankSystem\MahdiBankSystem\Admin.cpp(61,1): warning C4715: 'Admin::reactivateEmployee': not all control paths return a value
   MahdiBankSystem.vcxproj -> C:\Users\arrow\Desktop\Route CS Codes\Assignments\Project 2 - BankSystem\TeamTrails\MahdiBankSystem\x64\Debug\MahdiBankSystem.exe

@@ -104,7 +104,7 @@ public:
 				logout();
 			}
 			break;
-		} 
+		}
 
 		case 2: { // Mostafa
 			cout << "Dear Employee, Please Enter your ID: ";
@@ -150,8 +150,8 @@ public:
 				logout();
 			}
 			break;
-		} 
-			
+		}
+
 		case 3: { // Amira
 			cout << "Dear Admin, Please Enter your ID: ";
 			cin >> id;
@@ -196,8 +196,8 @@ public:
 				logout();
 			}
 			break;
-		} 
-			
+		}
+
 		case 4: // Mahdi
 			logout();
 			break;
@@ -216,6 +216,9 @@ public:
 		welcome();
 		loginOptions();
 		loginScreen(loginAs());
+		fm.exportAllAdmins();
+		fm.exportAllClients();
+		fm.exportAllEmployees();
 	}
 };
 

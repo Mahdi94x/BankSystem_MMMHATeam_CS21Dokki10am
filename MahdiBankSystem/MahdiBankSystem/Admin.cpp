@@ -3,6 +3,9 @@
 #include "FileManager.h"
 
 int Admin::countAdmins = 0;
+
+Admin* Admin::superAdmin = nullptr;
+
 //Mahdi
 void Admin::addEmployee() {
 	if (!isActive()) {
@@ -24,7 +27,6 @@ void Admin::addEmployee() {
 	cin >> salary;
 	Employee eNew(id, name, password, phoneNumber, salary);
 	fm.addEmployee(eNew);
-	FileHelper::saveLastID("EmployeeLastID.txt", id);
 	cout << "Employee added successfully.\n";
 }
 

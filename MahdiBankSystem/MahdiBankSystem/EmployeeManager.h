@@ -1,11 +1,13 @@
 #pragma once
 #include "Employee.h"
+#include "Vectors.h"
 #include "ClientManager.h"
+
 
 class EmployeeManager
 {
 public:
-	static int printEmployeeMenu(){ // Mohammed
+	static int printEmployeeMenu() { // Mohammed
 		cout << "Please choose one of the following options:" << endl;
 		cout << "1.  Check Salary" << endl;
 		cout << "2.  Display Information" << endl;
@@ -23,15 +25,15 @@ public:
 		return choice;
 	}
 
-	static void newClient(Employee* e){ //Mohammed
+	static void newClient(Employee* e) { // Mohammed
 		e->addClient();
 	}
 
-	static void listAllClients(Employee* e){ // Mohammed
+	static void listAllClients(Employee* e) { // Mohammed
 		e->listClient();
 	}
 
-	static void searchForClient(Employee* e){ // Mohammed
+	static void searchForClient(Employee* e) { // Mohammed
 		int id;
 		cout << "Enter the ID of the client you want to search for: ";
 		cin >> id;
@@ -41,7 +43,7 @@ public:
 		}
 	}
 
-	static void editClientInfo(Employee* e){ // Helal
+	static void editClientInfo(Employee* e) { // Helal
 		int id;
 		cout << "Enter the ID of the client you want to edit: ";
 		cin >> id;
@@ -65,7 +67,7 @@ public:
 		}
 	}
 
-	static Employee* login (int id, string password){ // Mostafa
+	static Employee* login(int id, string password) { // Mostafa
 		for (Employee& e : employeesVector) {
 			if (e.getID() == id && e.getPassword() == password) {
 				return &e;

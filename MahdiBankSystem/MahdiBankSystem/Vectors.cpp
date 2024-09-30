@@ -3,4 +3,3 @@ using namespace std;
 
 vector<Client> clientsVector;
 vector<Employee> employeesVector;
-vector<Admin> adminsVector;

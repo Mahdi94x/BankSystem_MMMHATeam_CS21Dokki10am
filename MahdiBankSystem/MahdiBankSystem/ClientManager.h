@@ -48,7 +48,7 @@ public:
 
 	static bool clientOptions(Client* c, int choice) {
 
-		Client* receiver = nullptr; // Case 3
+		Client* receiver = nullptr;
 
 		switch (choice) {
 		case 1:
