@@ -20,7 +20,7 @@ public:
 
 	//Mostafa
 	void addAdmin(Admin a) {
-		FileHelper::saveAdmin(a);
+		FileHelper::saveAdmin(Admin::getInstance());
 	}
 
 	//Amira

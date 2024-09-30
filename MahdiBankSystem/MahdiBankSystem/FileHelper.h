@@ -98,15 +98,15 @@ public:
 	}
 
 	//Mostafa
-	static void saveAdmin(Admin a) {
+	static void saveAdmin(Admin* a) {
 		fstream myFile;
-		string info = to_string(a.getID()) + '~' + a.getName() + '~' + a.getPassword() + '~' + a.getPhoneNumber() + '~' + to_string(a.getSalary());
+		string info = to_string(Admin::getInstance()->getID()) + '~' + Admin::getInstance()->getName() + '~' + Admin::getInstance()->getPassword() + '~' + Admin::getInstance()->getPhoneNumber() + '~' + to_string(Admin::getInstance()->getSalary());
 		myFile.open("Admin.txt", ios::out);
 		if (myFile.is_open()) {
 			myFile << info << endl;
 			myFile.close();
 		}
-		saveLastID("AdminLastID.txt", a.getID());
+		saveLastID("AdminLastID.txt", Admin::getInstance()->getID());
 	}
 
 	//Mostafa
